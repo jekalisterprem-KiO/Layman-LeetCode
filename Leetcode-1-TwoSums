@@ -1,6 +1,6 @@
-https://x.com/JeKalister_Prem/status/2018977604209119654/photo/1
-
 For the Laymen like me out there. There you go brother.
+
+https://x.com/JeKalister_Prem/status/2018977604209119654/photo/1
 
 The logic needs to be understood first, which involves finding the answer through taking the complement. Imagine it as finding the missing partner B or partner A.
 
@@ -18,4 +18,5 @@ The dictionary is structured as {value: index} because what we ultimately need t
 On the first iteration, the "boss" checks the dictionary and finds nothing. Consequently, the value is saved into the dictionary as {num: i} and the loop continues because no return or break has occurred. Moving to the next value in the list (for example, the number 7 at index 1), if the target is 9, the complement is 2. If 2 is already in the dictionary, the function is triggered to return seen[complement] and i.
 
 Since seen[complement] retrieves the value associated with that key, it returns the stored index (0), along with the current index (1). This provides the final answer, breaks the loop, and completes the task.
+
 
