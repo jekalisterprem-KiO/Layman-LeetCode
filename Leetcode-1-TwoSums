@@ -1,0 +1,19 @@
+For the Laymen like me out there. There you go brother.
+
+The logic needs to be understood first, which involves finding the answer through taking the complement. Imagine it as finding the missing partner B or partner A.
+
+Code now:
+The Solution class is defined with object as a parameter because of inheritance. It is needed. Lookup the further explanations.
+
+The user-defined function is defined with self, nums, and target. We use self because of Python syntax requirements for instance methods, while nums and target are the actual data we need. When running the program or integrating this into a larger function, you must call the class first and then the function.
+
+To start, an empty dictionary called seen is defined. 
+
+Then, we use a for loop where i and num are defined as counters using Python's enumerate function; this returns a tuple containing the index and the value of the elements in the list. As we iterate, we calculate the "big boss" counter, namely the complement, which is target - num. We then check if this complement is already in the seen dictionary.
+
+The dictionary is structured as {value: index} because what we ultimately need to return is the index, not the key.
+
+On the first iteration, the "boss" checks the dictionary and finds nothing. Consequently, the value is saved into the dictionary as {num: i} and the loop continues because no return or break has occurred. Moving to the next value in the list (for example, the number 7 at index 1), if the target is 9, the complement is 2. If 2 is already in the dictionary, the function is triggered to return seen[complement] and i.
+
+Since seen[complement] retrieves the value associated with that key, it returns the stored index (0), along with the current index (1). This provides the final answer, breaks the loop, and completes the task.
+
